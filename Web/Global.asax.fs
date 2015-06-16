@@ -20,9 +20,10 @@ type BundleConfig() =
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js"))
 
-        bundles.Add(StyleBundle("~/Content/css").Include(
-                        "~/Content/bootstrap.css",
-                        "~/Content/site.css"))
+        bundles.Add(StyleBundle("~/Content/css")
+            .Include("~/Content/bootstrap.css",
+                        "~/Content/site.css",
+                        "~/Content/shop-homepage.css"))
 
 /// Route for ASP.NET MVC applications
 type Route = { 
